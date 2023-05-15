@@ -15,9 +15,10 @@
 
 def sort_ips(ips: list):
     ip_lst = []
-    # first transform each ip into a tuple of size 4
+    # first transform each ip into a tuple of size 4, as making them in to tuples makes the sorting easier
     for ip in ips:
         s = ip.split(".")
+        # cast string into int, make comparison fair, or it will make '196' smaller than '27'
         s = map(lambda x : int(x), s)
         ip_lst.append(tuple(s))
 
