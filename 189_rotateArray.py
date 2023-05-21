@@ -11,7 +11,7 @@
 """
 
 class Solution(object):
-    def rotate(self, nums, k):
+    def rotate(self, nums: List[int], k: int) -> None:
         n = len(nums)
         if k % n == 0:
             return
@@ -21,7 +21,7 @@ class Solution(object):
         # print(to_mv, res)
         return to_mv
 
-    def rotate2(self, nums, k):
+    def rotate2(self, nums: List[int], k: int) -> None:
         n = len(nums)
         if k % n == 0:
             return
